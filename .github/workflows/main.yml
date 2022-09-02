@@ -12,13 +12,13 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Android kernel build
-      uses: lemniskett/android-kernel-actions@master
+      uses: CharlesForson/android-kernel-actions@master
       id: build
       env:
         NAME: CLO-BUILD
       with:
         arch: arm64
-        compiler: proton-clang/master
+        compiler: proton-clang/master/binutils
         defconfig: vendor/sm8150_defconfig
         image: Image.gz-dtb
 
