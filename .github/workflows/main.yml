@@ -12,7 +12,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Android kernel build
-      uses: CharlesForson/android-kernel-actions@master
+      uses: CharlesForson/Android-Kernel-Build-Action@master
       id: build
       env:
         NAME: CLO-BUILD
